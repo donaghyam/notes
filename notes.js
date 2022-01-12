@@ -27,14 +27,22 @@ const noteAboutToday = [
 
 notes.push(noteAboutToday)
 
-for (const note of notes){
-    console.log(`Note ${note.id} 
-    ${note.date}
-    I learned about ${note.subject}
-    I spent ${note.timeSpent} minutes working on it
-    I felt ${note.feeling}.
-    -----------------
-    `)
+// for (const note of notes){
+//     console.log(`Note ${note.id} 
+//     ${note.date}
+//     I learned about ${note.subject}
+//     I spent ${note.timeSpent} minutes working on it
+//     I felt ${note.feeling}.
+//     -----------------
+//     `)
+// }
+
+const searchTerm = "functions"
+
+for (const note of notes) {
+    if (note.subject === "functions")
+    console.log(note)
+    
 }
 
 
