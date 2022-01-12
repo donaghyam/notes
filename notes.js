@@ -37,12 +37,27 @@ notes.push(noteAboutToday)
 //     `)
 // }
 
-const searchTerm = "functions"
+// const searchTerm = "functions"
 
-for (const note of notes) {
-    if (note.subject === "functions")
-    console.log(note)
+// for (const note of notes) {
+//     if (note.subject === "functions")
+//     console.log(note)
     
+// }
+
+const createNote = (note) => {
+    note.id = "4"
+    notes.push(note)
 }
 
+const moreNewerNote = {
+    subject: ".push method",
+    date: "1/12/22",
+    feeling: "semi-confident",
+    timeSpent: 15
+}
+
+createNote(moreNewerNote)
+
+console.log(moreNewerNote)
 
