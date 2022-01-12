@@ -48,6 +48,7 @@ notes.push(noteAboutToday)
 const createNote = (note) => {
     note.id = "4"
     notes.push(note)
+    note.dateCreated = Date.now()
 }
 
 const moreNewerNote = {
