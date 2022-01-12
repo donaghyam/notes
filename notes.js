@@ -15,4 +15,16 @@ const notes = [
     }
 ]
 
+const noteAboutToday = [
+    {
+    id: 3,
+    subject: "array",
+    date: "1/12/22",
+    feeling: "Confident",
+    timeSpent: 15
+    }
+]
+
+notes.push(noteAboutToday)
+
 console.log(notes)
